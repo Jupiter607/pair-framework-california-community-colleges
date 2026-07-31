@@ -1,0 +1,6 @@
+{
+  "name": "Polarity-to-Action Practitioner AI",
+  "description": "AI-powered agentic workbench for practitioners & facilitators, supporting voice, document upload, and structured P.A.I.R. polarity management.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Plain Language Markdown Formatting styles */
+  .plain-markdown h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #fcd34d;
+    padding-bottom: 0.25rem;
+  }
+  .plain-markdown h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 1rem;
+    margin-bottom: 0.375rem;
+  }
+  .plain-markdown h3 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #334155;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+  .plain-markdown p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+  .plain-markdown ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .plain-markdown ol {
+    list-style-type: decimal;
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .plain-markdown li {
+    margin-bottom: 0.25rem;
+  }
+  .plain-markdown strong {
+    color: #0f172a;
+    font-weight: 700;
+  }
+  .plain-markdown blockquote {
+    border-left: 4px solid #f59e0b;
+    background-color: #fef3c7;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide app navigation chrome, header, stepper, buttons, and floating drawers during print */
+  header,
+  nav,
+  button,
+  footer,
+  .no-print,
+  #btn-convert-plain-language,
+  #btn-open-sessions,
+  #btn-open-guidebook,
+  #btn-new-session,
+  #btn-toggle-ai-chat,
+  .PairStepper,
+  .DocumentUploader {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Expand printable report card to full print page */
+  #printable-report {
+    display: block !important;
+    visibility: visible !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #printable-report * {
+    visibility: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 1.2cm;
+    size: letter portrait;
+  }
+}
+
