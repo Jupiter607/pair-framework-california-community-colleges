@@ -1,0 +1,64 @@
+---
+description: Production rules for the Leading Through Tension P.A.I.R. application
+alwaysApply: true
+---
+
+# Product
+
+This application helps teams distinguish solvable problems from ongoing polarities and create both/and action plans.
+
+Preserve:
+- Pinpoint
+- Assess
+- Investigate
+- Respond
+- Report
+
+Never portray one pole as inherently good and the other as inherently bad.
+
+# Architecture
+
+- Keep React, TypeScript, Vite, and Tailwind for the current release.
+- Use Vercel Functions for production APIs.
+- Keep AI credentials and prompts server-side.
+- Do not introduce a database or authentication without an approved requirement.
+- Avoid large dependencies.
+
+# Security
+
+- Validate every API request at runtime.
+- Validate every structured AI response.
+- Enforce request and file size limits.
+- Do not log sensitive content.
+- Do not expose provider errors.
+- Do not use raw HTML for AI output.
+- Never commit `.env` files or secrets.
+- Never use `VITE_` for a secret.
+
+# State
+
+- Preserve existing local sessions.
+- Version persisted state.
+- Provide migrations.
+- Do not persist raw base64 media.
+- Confirm before destructive actions.
+
+# UX
+
+- All core functionality must work without AI.
+- AI-generated text must be labeled.
+- User confirmation is required before applying AI updates.
+- Target WCAG 2.2 AA.
+- Maintain keyboard operation and visible focus.
+- Respect reduced motion.
+
+# Completion
+
+Before saying work is complete:
+1. Run typecheck.
+2. Run lint.
+3. Run tests.
+4. Run production build.
+5. Report exact results.
+6. Summarize files changed.
+7. State remaining risks honestly.

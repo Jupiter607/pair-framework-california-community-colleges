@@ -1,0 +1,24 @@
+{
+  "package": "P.A.I.R. Production Readiness Documentation",
+  "created": "2026-07-31",
+  "source_repository": "Jupiter607/pair-framework-california-community-colleges",
+  "files": [
+    ".cursor/rules/project.mdc",
+    ".github/workflows/quality.yml",
+    "README_PRODUCTION.md",
+    "docs/ACCESSIBILITY.md",
+    "docs/API_CONTRACT.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CURSOR_MASTER_PROMPT.md",
+    "docs/DATA_MODEL.md",
+    "docs/IMPLEMENTATION_PLAN.md",
+    "docs/OBSERVABILITY_OPERATIONS.md",
+    "docs/PRODUCT_REQUIREMENTS.md",
+    "docs/RELEASE_CHECKLIST.md",
+    "docs/REPOSITORY_AUDIT.md",
+    "docs/SECURITY_PRIVACY.md",
+    "docs/TESTING_QUALITY.md",
+    "docs/VERCEL_DEPLOYMENT.md",
+    "vercel.example.json"
+  ]
+}
